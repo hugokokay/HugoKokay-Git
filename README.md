@@ -41,7 +41,6 @@ Você deve ver a pasta `website/` com seus arquivos:
 ls -la website/
 ```
 
-*[Espaço para print: Estrutura de arquivos do projeto]*
 
 ### Passo 1.2: Testar o website localmente (opcional)
 
@@ -57,7 +56,6 @@ xdg-open website/index.html
 start website/index.html
 ```
 
-*[Espaço para print: Website funcionando no navegador]*
 
 ---
 
@@ -125,7 +123,6 @@ Você verá a saída do processo de build:
  => naming to docker.io/library/meu-website:v1.0
 ```
 
-*[Espaço para print: Processo de build do Docker]*
 
 ### Passo 2.4: Verificar a imagem criada
 
@@ -139,7 +136,6 @@ REPOSITORY     TAG       IMAGE ID       CREATED          SIZE
 meu-website    v1.0      abc123def456   30 seconds ago   23.5MB
 ```
 
-*[Espaço para print: Lista de imagens Docker]*
 
 ---
 
@@ -170,7 +166,6 @@ CONTAINER ID   IMAGE              COMMAND                  CREATED         STATU
 xyz789abc123   meu-website:v1.0   "nginx -g 'daemon..."   10 seconds ago  Up 9 seconds   0.0.0.0:8080->80/tcp   meu-website-container
 ```
 
-*[Espaço para print: Container em execução]*
 
 ### Passo 3.3: Testar no navegador
 
@@ -181,7 +176,6 @@ http://localhost:8080
 
 Você deve ver seu website funcionando! 🎉
 
-*[Espaço para print: Website rodando via Docker no localhost:8080]*
 
 ### Passo 3.4: Verificar logs do container (opcional)
 
