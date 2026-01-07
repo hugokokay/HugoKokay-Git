@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, url_for, render_template
 
 # inicialização do aplicativo Flask
 app = Flask(__name__)
@@ -6,7 +6,13 @@ app = Flask(__name__)
 #rotas
 @app.route('/') 
 def ola_mundo():
-    return "Olá, Mundo!"
+    return render_template("index.html")
 
-# execução do aplicativo
-app.run (debug=True) # modo de depuração ativado
+@app.route('/sobre')
+def pagina_sobre():
+    return """
+          <b>Programador Python</b>: assita os videos no
+          <a href="https://www.youtube.com/@programadorpython">Canal do YouTube</a>
+          """
+
+app.run(debug=True)
