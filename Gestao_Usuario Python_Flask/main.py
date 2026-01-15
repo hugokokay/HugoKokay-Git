@@ -6,6 +6,7 @@ app = Flask(__name__)
 #rotas
 @app.route('/') 
 def ola_mundo():
+    
     return render_template("index.html")
 
 @app.route('/sobre')
